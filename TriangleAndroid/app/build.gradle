@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "ir.fardan7eghlim.tri"
+        manifestPlaceholders = [onesignal_app_id               : "47599455-4cf0-49fd-84f8-022e5abb86a6",
+                                // Project number pulled from dashboard, local value is ignored.
+                                onesignal_google_project_number: "58555506113"]
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "0.0.1"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.android.support:support-v4:26.1.0'
+    implementation 'joda-time:joda-time:2.10'
+    implementation 'com.appolica:flubber:1.0.1'
+    implementation 'io.saeid:oghat:1.0.0'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.asksira.android:dropdownview:0.9.2'
+    implementation 'com.facebook.rebound:rebound:0.3.8'
+    implementation 'com.etsy.android.grid:library:1.0.5'
+    implementation 'com.ebanx:swipe-button:0.8.3'
+    implementation 'com.github.hamsaadev:Persian-Date-Picker-Dialog:V1.2'
+//    implementation 'com.github.paolorotolo:appintro:3.4.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile 'com.android.volley:volley:1.1.0'
+    implementation 'com.onesignal:OneSignal:3.+@aar'
+    implementation 'com.android.support:multidex:1.0.2'
+
+}
