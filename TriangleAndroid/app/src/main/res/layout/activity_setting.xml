@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ir.fardan7eghlim.tri.Views.Home.SettingActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="#b8b8b8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="انتخاب شهر"
+                    android:textColor="#525252"
+                    android:textSize="@dimen/s4_font_size"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="#b8b8b8" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s6_font_size"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <Spinner
+                    android:id="@+id/spr_province_setting"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="استان:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/s4_font_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/s4_font_size"
+                android:layout_marginTop="@dimen/s6_font_size"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <Spinner
+                    android:id="@+id/spr_city_setting"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="شهر:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/s4_font_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="#b8b8b8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="اوقات شرعی"
+                    android:textColor="#525252"
+                    android:textSize="@dimen/s4_font_size"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="#b8b8b8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/s4_font_size"
+                android:layout_marginTop="@dimen/s6_font_size"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <CheckBox
+                    android:id="@+id/chBx_namayesh_oghat_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/sss_font_size"
+                    android:layoutDirection="rtl"
+                    android:text="نمایش اوقات شرعی در صفحه تقویم"
+                    android:textDirection="rtl" />
+
+                <CheckBox
+                    android:id="@+id/chBx_azan_sobh_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:text="پخش اذان صبح"
+                    android:textDirection="rtl" />
+
+                <CheckBox
+                    android:id="@+id/chBx_azan_zohr_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:text="پخش اذان ظهر و عصر"
+                    android:textDirection="rtl" />
+
+                <CheckBox
+                    android:id="@+id/chBx_azan_maghreb_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/sss_font_size"
+                    android:layoutDirection="rtl"
+                    android:text="پخش اذان مغرب و عشا"
+                    android:textDirection="rtl" />
+
+                <RadioGroup
+                    android:id="@+id/rdbtn_azan_voices_setting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rdbtn_azan_voice1_setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="rtl"
+                        android:text="الله اکبر،الله اکبر (روح الله کاظم زاده)"
+                        android:textDirection="rtl" />
+
+                    <RadioButton
+                        android:id="@+id/rdbtn_azan_voice2_setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="rtl"
+                        android:text="اذان کامل مرحوم موذن زاده"
+                        android:textDirection="rtl" />
+
+                    <RadioButton
+                        android:id="@+id/rdbtn_azan_voice3_setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="rtl"
+                        android:text="اذان کامل مرحوم آقاتی"
+                        android:textDirection="rtl" />
+                    <RadioButton
+                        android:id="@+id/rdbtn_azan_voice4_setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="rtl"
+                        android:layout_marginBottom="@dimen/s4_font_size"
+                        android:text="اذان کامل روح الله کاظم زاده"
+                        android:textDirection="rtl" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="#b8b8b8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="مثلث ها"
+                    android:textColor="#525252"
+                    android:textSize="@dimen/s4_font_size"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="#b8b8b8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/chBx_namayesh_triangles_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/s6_font_size"
+                    android:layoutDirection="rtl"
+                    android:text="نمایش مثلث ها برروی صفحه ی گوشی"
+                    android:textDirection="rtl" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/s4_font_size"
+                android:layout_marginTop="@dimen/s4_font_size"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <Spinner
+                    android:id="@+id/spr_mosalas_rtl_setting"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="مکان مثلث ها:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/s4_font_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/s4_font_size"
+                android:layout_marginTop="@dimen/s6_font_size"
+                android:orientation="horizontal"
+                android:weightSum="10">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/img_tri1_setting"
+                        android:layout_width="@dimen/s4_font_size"
+                        android:layout_height="@dimen/s4_font_size"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/triangle_a" />
+                    <Space
+                        android:id="@+id/img_sp1_setting"
+                        android:layout_width="@dimen/s5_font_size"
+                        android:layout_height="@dimen/s5_font_size" />
+                    <ImageView
+                        android:id="@+id/img_tri2_setting"
+                        android:layout_width="@dimen/s4_font_size"
+                        android:layout_height="@dimen/s4_font_size"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/triangle_a" />
+                    <Space
+                        android:id="@+id/img_sp2_setting"
+                        android:layout_width="@dimen/s5_font_size"
+                        android:layout_height="@dimen/s5_font_size" />
+                    <ImageView
+                        android:id="@+id/img_tri3_setting"
+                        android:layout_width="@dimen/s4_font_size"
+                        android:layout_height="@dimen/s4_font_size"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/triangle_a" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="سایز مثلث ها"
+                        android:textColor="#525252"
+                        android:textSize="@dimen/s4_font_size"
+                        android:textStyle="bold" />
+
+                    <SeekBar
+                        android:id="@+id/skB_size_tris_setting"
+                        android:layout_width="match_parent"
+                        android:max="9"
+                        android:min="0"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="فاصله بین مثلث ها"
+                        android:textColor="#525252"
+                        android:textSize="@dimen/s4_font_size"
+                        android:textStyle="bold" />
+                    <SeekBar
+                        android:id="@+id/skB_spaces_tris_setting"
+                        android:layout_width="match_parent"
+                        android:max="6"
+                        android:min="0"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="#b8b8b8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="نوار اعلان"
+                    android:textColor="#525252"
+                    android:textSize="@dimen/s4_font_size"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="#b8b8b8" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <CheckBox
+                    android:id="@+id/chBx_notifi_show_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/s6_font_size"
+                    android:layoutDirection="rtl"
+                    android:text="نمایش تقویم در نوار اعلان"
+                    android:textDirection="rtl" />
+                <CheckBox
+                    android:id="@+id/chBx_notifi_ext_show_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/s6_font_size"
+                    android:layoutDirection="rtl"
+                    android:text="نمایش اوقات شرعی با فشردن اعلام"
+                    android:textDirection="rtl" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="#b8b8b8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="تقویم قمری"
+                    android:textColor="#525252"
+                    android:textSize="@dimen/s4_font_size"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="#b8b8b8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/s4_font_size"
+                android:layout_marginTop="@dimen/s6_font_size"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <Spinner
+                    android:id="@+id/spr_ghamari_setting"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="اصلاح تاریخ قمری:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/s4_font_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<View-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:layout_margin="10dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:background="#b8b8b8" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="نسخه"-->
+                    <!--android:textColor="#525252"-->
+                    <!--android:textSize="@dimen/s4_font_size"-->
+                    <!--android:textStyle="bold" />-->
+
+                <!--<View-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:layout_margin="10dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:background="#b8b8b8" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/s4_font_size"-->
+                <!--android:layout_marginTop="@dimen/s6_font_size"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:weightSum="10">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/txt_version_setting"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center"-->
+                    <!--android:linksClickable="true"-->
+                    <!--android:text="v 0.0.1"-->
+                    <!--android:textColor="#525252"-->
+                    <!--android:textSize="@dimen/s4_font_size"-->
+                    <!--android:textStyle="bold" />-->
+            <!--</LinearLayout>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="#b8b8b8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="خروج"
+                    android:textColor="#525252"
+                    android:textSize="@dimen/s4_font_size"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="#b8b8b8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/s4_font_size"
+                android:layout_marginTop="@dimen/s6_font_size"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:weightSum="10">
+                <CheckBox
+                    android:id="@+id/chBx_startup_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/s6_font_size"
+                    android:layoutDirection="rtl"
+                    android:text="باز شدن خودکار برنامه هنگام روشن شدن گوشی"
+                    android:textDirection="rtl" />
+                <!--<Button-->
+                    <!--android:id="@+id/btn_full_exit"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginLeft="@dimen/s4_font_size"-->
+                    <!--android:layout_marginRight="@dimen/s4_font_size"-->
+                    <!--android:text="بستن کامل برنامه"-->
+                    <!--android:layout_height="wrap_content" />-->
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

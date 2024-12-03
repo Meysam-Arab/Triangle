@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/option_dialog_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/x2_font_size">
+        <ImageView
+            android:id="@+id/img_conatct_d_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:src="@drawable/triangle_a"/>
+        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x2_font_size"
+            android:gravity="center"
+            android:text="لطفا منتظر بمانید"
+            android:textColor="@color/colorPrimaryWhite"
+            android:textSize="@dimen/s4_font_size"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+</LinearLayout>

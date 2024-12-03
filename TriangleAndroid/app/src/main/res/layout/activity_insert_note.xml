@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="@drawable/bg06"
+    tools:context="ir.fardan7eghlim.tri.Views.Note.InsertNoteActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_margin="@dimen/s6_font_size"
+        android:layout_weight="15">
+
+        <ImageView
+            android:id="@+id/img_delete_inNote"
+            android:layout_width="0dp"
+            android:layout_weight="15"
+            android:visibility="gone"
+            android:adjustViewBounds="true"
+            android:layout_height="match_parent"
+            android:padding="@dimen/s5_font_size"
+            app:srcCompat="@drawable/btn_icon_delete" />
+
+        <ir.fardan7eghlim.tri.Models.widgets.customEditText
+            android:id="@+id/txt_title_inNote"
+            android:layout_width="0dp"
+            android:layout_weight="85"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_gray2"
+            android:gravity="top"
+            android:padding="@dimen/s5_font_size"
+            android:hint="عنوان یادداشت ..."
+            android:textColorHint="@color/colorPrimaryWhite"
+            android:text=""
+            android:textColor="@color/colorPrimaryWhite"
+            android:textSize="@dimen/sss_font_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <ir.fardan7eghlim.tri.Models.widgets.customEditText
+        android:id="@+id/txt_description_inNote"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:background="@drawable/rounded_gray2"
+        android:gravity="top"
+        android:padding="@dimen/s5_font_size"
+        android:layout_marginLeft="@dimen/s6_font_size"
+        android:layout_marginRight="@dimen/s6_font_size"
+        android:hint="متن یادداشت را اینجا وارد کنید ..."
+        android:textColorHint="@color/colorPrimaryWhite"
+        android:text=""
+        android:textColor="@color/colorPrimaryWhite"
+        android:textSize="@dimen/sss_font_size"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/s4_font_size"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <ir.fardan7eghlim.tri.Models.widgets.customButton
+            android:id="@+id/btn_Quit_instask"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/s6_font_size"
+            android:layout_marginRight="@dimen/s6_font_size"
+            android:layout_weight="4"
+            android:background="@drawable/rounded_gray"
+            android:text="برگشت"
+            android:textColor="@color/colorPrimaryWhite" />
+        <ir.fardan7eghlim.tri.Models.widgets.customButton
+            android:id="@+id/btn_add_inNote"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/s6_font_size"
+            android:layout_marginRight="@dimen/s6_font_size"
+            android:layout_weight="6"
+            android:background="@drawable/rounded_gray"
+            android:text="ثبت"
+            android:textColor="@color/colorPrimaryWhite" />
+    </LinearLayout>
+</LinearLayout>

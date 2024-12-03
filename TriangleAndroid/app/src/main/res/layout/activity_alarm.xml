@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg04"
+    tools:context="ir.fardan7eghlim.tri.Views.Task.AlarmActivity">
+
+    <ImageView
+        android:id="@+id/img_alarm_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/triangle_a_alpha2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="70"
+            android:paddingTop="@dimen/font_size"
+            android:paddingLeft="@dimen/s_font_size"
+            android:paddingRight="@dimen/s_font_size"
+            android:orientation="vertical">
+
+            <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                android:id="@+id/digitalClock"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="time"
+                android:text="00:00"
+                android:textColor="@color/colorPrimaryWhite"
+                android:textSize="@dimen/x1_font_size"
+                android:textStyle="bold" />
+
+            <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="70"
+                android:gravity="center"
+                android:textColor="@color/drp_orange2"
+                android:textSize="@dimen/s_font_size" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:paddingLeft="@dimen/s_font_size"
+            android:paddingTop="@dimen/font_size"
+            android:paddingRight="@dimen/s_font_size">
+
+            <com.ebanx.swipebtn.SwipeButton
+                android:id="@+id/swipe_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                app:button_background="@drawable/shape_button"
+                app:button_bottom_padding="20dp"
+                app:button_image_disabled="@drawable/silence"
+                app:button_image_enabled="@drawable/silence"
+                app:button_image_height="60dp"
+                app:button_image_width="100dp"
+                app:button_left_padding="20dp"
+                app:button_right_padding="20dp"
+                app:button_top_padding="20dp"
+                app:has_activate_state="true"
+                app:initial_state="disabled"
+                app:inner_text="به سمت راست بکشید"
+                app:inner_text_background="@drawable/shape_rounded"
+                app:inner_text_bottom_padding="@dimen/s4_font_size"
+                app:inner_text_color="@color/drp_blue"
+                app:inner_text_size="@dimen/s3.1_font_size"
+                app:inner_text_top_padding="@dimen/s4_font_size" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_gray"
+    android:id="@+id/toast_layout_root"
+    android:paddingLeft="@dimen/ss_font_size"
+    android:paddingRight="@dimen/ss_font_size"
+    android:paddingTop="@dimen/s5_font_size"
+    android:paddingBottom="@dimen/s5_font_size"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryWhite" />
+
+</FrameLayout>

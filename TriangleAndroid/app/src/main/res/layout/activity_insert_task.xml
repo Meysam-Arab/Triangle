@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f225364b"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/s6_font_size"
+    android:paddingRight="@dimen/s6_font_size"
+    tools:context="ir.fardan7eghlim.tri.Views.Task.InsertTaskActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/font_size"
+        android:layout_marginBottom="@dimen/s5_font_size"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/s5_font_size"
+            android:layout_weight="25"
+            android:background="#b4ede2e2" />
+
+        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:text="اضافه کردن رویداد جدید"
+            android:textColor="@color/drp_blue"
+            android:textSize="@dimen/s4_font_size" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/s5_font_size"
+            android:layout_weight="25"
+            android:background="#b4ede2e2" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s6_font_size"
+                android:background="@drawable/rounded_gray2"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/s6_font_size"
+                android:paddingTop="@dimen/s6_font_size"
+                android:weightSum="10">
+
+                <Spinner
+                    android:id="@+id/spr_type_instask"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:textColor="@color/colorPrimaryWhite" />
+
+                <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="نوع رویداد:"
+                    android:textColor="@color/colorPrimaryWhite"
+                    android:textSize="@dimen/s4_font_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_date_intask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sss_font_size"
+                android:background="@drawable/rounded_gray2"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                    android:id="@+id/txt_date_intask"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:gravity="center"
+                    android:text="..."
+                    android:textColor="@color/colorPrimaryWhite"
+                    android:textSize="@dimen/sss_font_size"
+                    android:textStyle="bold" />
+
+                <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                    android:id="@+id/txt_date_title_intask"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="در تاریخ:"
+                    android:textColor="@color/colorPrimaryWhite"
+                    android:textSize="@dimen/s4_font_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_date2_intask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s6_font_size"
+                android:background="@drawable/rounded_gray2"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                    android:id="@+id/txt_date2_intask"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:gravity="center"
+                    android:text="..."
+                    android:textColor="@color/colorPrimaryWhite"
+                    android:textSize="@dimen/sss_font_size"
+                    android:textStyle="bold" />
+
+                <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="تا تاریخ:"
+                    android:textColor="@color/colorPrimaryWhite"
+                    android:textSize="@dimen/s4_font_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--<Spinner-->
+                <!--android:id="@+id/spr_weekname_instask"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="6"-->
+                <!--android:visibility="gone" />-->
+
+            <LinearLayout
+                android:id="@+id/ll_weekname_instask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/s6_font_size"
+                android:layout_marginTop="@dimen/s6_font_size"
+                android:background="@drawable/rounded_gray2"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:weightSum="7">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3">
+
+                    <ir.fardan7eghlim.tri.Models.widgets.customCheckBox
+                        android:id="@+id/cbk_week_2_instask"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layoutDirection="rtl"
+                        android:text="دوشنبه‌ها"
+                        android:textColor="@color/colorPrimaryWhite"
+                        android:textDirection="rtl"
+                        android:textSize="@dimen/s4_font_size"
+                        android:theme="@android:style/Theme.Holo" />
+
+                    <ir.fardan7eghlim.tri.Models.widgets.customCheckBox
+                        android:id="@+id/cbk_week_1_instask"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layoutDirection="rtl"
+                        android:text="یکشنبه‌ها"
+                        android:textColor="@color/colorPrimaryWhite"
+                        android:textDirection="rtl"
+                        android:textSize="@dimen/s4_font_size"
+                        android:theme="@android:style/Theme.Holo" />
+
+                    <ir.fardan7eghlim.tri.Models.widgets.customCheckBox
+                        android:id="@+id/cbk_week_0_instask"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layoutDirection="rtl"
+                        android:text="شنبه‌ها"
+                        android:textColor="@color/colorPrimaryWhite"
+                        android:textDirection="rtl"
+                        android:textSize="@dimen/s4_font_size"
+                        android:theme="@android:style/Theme.Holo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="3">
+                    <ir.fardan7eghlim.tri.Models.widgets.customCheckBox
+                        android:id="@+id/cbk_week_5_instask"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layoutDirection="rtl"
+                        android:text=" پنجشنبه‌ها"
+                        android:textColor="@color/colorPrimaryWhite"
+                        android:textDirection="rtl"
+                        android:textSize="@dimen/s4_font_size"
+                        android:theme="@android:style/Theme.Holo" />
+                    <ir.fardan7eghlim.tri.Models.widgets.customCheckBox
+                        android:id="@+id/cbk_week_4_instask"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layoutDirection="rtl"
+                        android:text="چهارشنبه‌ها"
+                        android:textColor="@color/colorPrimaryWhite"
+                        android:textDirection="rtl"
+                        android:textSize="@dimen/s4_font_size"
+                        android:theme="@android:style/Theme.Holo" />
+                    <ir.fardan7eghlim.tri.Models.widgets.customCheckBox
+                        android:id="@+id/cbk_week_3_instask"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layoutDirection="rtl"
+                        android:text="سه شنبه‌ها"
+                        android:textColor="@color/colorPrimaryWhite"
+                        android:textDirection="rtl"
+                        android:textSize="@dimen/s4_font_size"
+                        android:theme="@android:style/Theme.Holo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="1">
+
+                    <ir.fardan7eghlim.tri.Models.widgets.customCheckBox
+                        android:id="@+id/cbk_week_6_instask"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layoutDirection="rtl"
+                        android:text="جمعه‌ها"
+                        android:textColor="@color/colorPrimaryWhite"
+                        android:textDirection="rtl"
+                        android:textSize="@dimen/s4_font_size"
+                        android:theme="@android:style/Theme.Holo" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_monthday_instask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s6_font_size"
+                android:background="@drawable/rounded_gray2"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <Spinner
+                    android:id="@+id/spr_monthday_instask"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6" />
+
+                <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="چندم هر ماه:"
+                    android:textColor="@color/colorPrimaryWhite"
+                    android:textSize="@dimen/s4_font_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s4_font_size"
+                android:background="@drawable/rounded_gray2"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                    android:id="@+id/txt_time_intask"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:gravity="center"
+                    android:text="..."
+                    android:textColor="@color/colorPrimaryWhite"
+                    android:textSize="@dimen/sss_font_size"
+                    android:textStyle="bold" />
+
+                <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="از ساعت:"
+                    android:textColor="@color/colorPrimaryWhite"
+                    android:textSize="@dimen/s4_font_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s6_font_size"
+                android:background="@drawable/rounded_gray2"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                    android:id="@+id/txt_time2_intask"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:gravity="center"
+                    android:text="..."
+                    android:textColor="@color/colorPrimaryWhite"
+                    android:textSize="@dimen/sss_font_size"
+                    android:textStyle="bold" />
+
+                <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="تا ساعت:"
+                    android:textColor="@color/colorPrimaryWhite"
+                    android:textSize="@dimen/s4_font_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sss_font_size"
+                android:background="@drawable/rounded_gray2"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ir.fardan7eghlim.tri.Models.widgets.customEditText
+                    android:id="@+id/txt_description_intask"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:hint="..."
+                    android:text=""
+                    android:textColor="@color/colorPrimaryWhite"
+                    android:textSize="@dimen/sss_font_size"
+                    android:textStyle="bold" />
+
+                <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="توضیحات:"
+                    android:textColor="@color/colorPrimaryWhite"
+                    android:textColorHint="@color/drp_gray"
+                    android:textSize="@dimen/s4_font_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/s6_font_size"
+                android:layout_marginTop="@dimen/sss_font_size"
+                android:background="@drawable/rounded_gray2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <Spinner
+                        android:id="@+id/spr_alert_instask"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6" />
+
+                    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center"
+                        android:text="یادآوری:"
+                        android:textColor="@color/colorPrimaryWhite"
+                        android:textSize="@dimen/s4_font_size"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ir.fardan7eghlim.tri.Models.widgets.customCheckBox
+                    android:id="@+id/chBx_alarm_instask"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/s5_font_size"
+                    android:layoutDirection="rtl"
+                    android:text="پخش شدن صدای آلارم برای یادآوری"
+                    android:textColor="@color/colorPrimaryWhite"
+                    android:textDirection="rtl"
+                    android:theme="@android:style/Theme.Holo"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s4_font_size"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ir.fardan7eghlim.tri.Models.widgets.customButton
+                    android:id="@+id/btn_add_instask"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/s6_font_size"
+                    android:layout_marginRight="@dimen/s6_font_size"
+                    android:layout_weight="4"
+                    android:background="@drawable/rounded_gray"
+                    android:text="برگشت"
+                    android:textColor="@color/colorPrimaryWhite" />
+
+                <ir.fardan7eghlim.tri.Models.widgets.customButton
+                    android:id="@+id/btn_addAndQuit_instask"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/s6_font_size"
+                    android:layout_marginRight="@dimen/s6_font_size"
+                    android:layout_weight="6"
+                    android:background="@drawable/rounded_gray"
+                    android:text="ثبت"
+                    android:textColor="@color/colorPrimaryWhite" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

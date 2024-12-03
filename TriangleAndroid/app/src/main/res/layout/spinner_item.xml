@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ir.fardan7eghlim.tri.Models.widgets.customTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/s4_font_size"
+    android:gravity="right"
+    android:textStyle="bold"
+    android:textColor="#f1f1f1"
+    android:padding="5dip" />

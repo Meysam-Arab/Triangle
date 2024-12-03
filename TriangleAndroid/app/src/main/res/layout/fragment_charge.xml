@@ -1,0 +1,215 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ir.fardan7eghlim.tri.Views.Home.Fragments.ChargeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="5"
+            android:background="@color/silver"
+            android:gravity="center"
+            android:text="خرید شارژ"
+            android:textColor="@color/black"
+            android:textSize="@dimen/s4_font_size" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="شماره همراه"
+            android:textColor="@color/colorPrimaryWhite"
+            android:textSize="@dimen/s4_font_size"
+            android:textStyle="bold" />
+
+        <AutoCompleteTextView
+            android:id="@+id/edt_phone_for_charge"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/s5_font_size"
+            android:layout_marginLeft="@dimen/x2_font_size"
+            android:layout_marginRight="@dimen/x2_font_size"
+            android:layout_weight="8"
+            android:background="@drawable/rounded_edittext_focused"
+            android:hint="09xxxxxxxxx"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingLeft="@dimen/s5_font_size"
+            android:paddingRight="@dimen/s5_font_size"
+            android:text=""
+            android:textSize="@dimen/ss_font_size" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="اپراتور"
+            android:textColor="@color/colorPrimaryWhite"
+            android:textSize="@dimen/s4_font_size"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="7"
+            android:orientation="horizontal"
+            android:weightSum="94">
+
+            <TextView
+                android:id="@+id/btn_rightel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:background="@drawable/rounded_purpel"
+                android:gravity="center"
+                android:text="رایتل"
+                android:textColor="@color/colorPrimaryWhite"
+                android:textSize="@dimen/s4_font_size"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+            <TextView
+                android:id="@+id/btn_irancell"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:background="@drawable/rounded_yellow"
+                android:gravity="center"
+                android:text="ایرانسل"
+                android:textColor="@color/colorPrimaryWhite"
+                android:textSize="@dimen/sss_font_size"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+            <TextView
+                android:id="@+id/btn_hamrahaval"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:background="@drawable/rounded_cyan"
+                android:gravity="center"
+                android:text="همراه اول"
+                android:textColor="@color/colorPrimaryWhite"
+                android:textSize="@dimen/s4_font_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50">
+            <LinearLayout
+                android:id="@+id/ll_typed_prce_charge"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:text="مبلغ"
+                    android:textColor="@color/colorPrimaryWhite"
+                    android:textSize="@dimen/sss_font_size"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/edt_typed_price_for_charge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/x2_font_size"
+                    android:layout_marginLeft="@dimen/s4_font_size"
+                    android:layout_marginRight="@dimen/s4_font_size"
+                    android:layout_weight="8"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="تومان"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:paddingLeft="@dimen/s5_font_size"
+                    android:paddingRight="@dimen/s5_font_size"
+                    android:text=""
+                    android:textSize="@dimen/ss_font_size" />
+            </LinearLayout>
+            <com.asksira.dropdownview.DropDownView
+                android:id="@+id/dropdownview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:arrow_drawable="@drawable/triangle_a_alpha"
+                app:arrow_width="24dp"
+                app:divider_color="@android:color/holo_orange_light"
+                app:dropDownItem_text_color_selected="@android:color/holo_orange_dark"
+                app:dropDownItem_text_size_selected="18sp"
+                app:filter_bar_background_color="@android:color/holo_orange_dark"
+                app:filter_text_color="@android:color/white"
+                app:placeholder_text="لطفا مبلغ را انتخاب کنید" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_purch_charge"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/s5_font_size"
+                android:layout_marginTop="@dimen/s5_font_size"
+                android:background="@drawable/rounded_gray"
+                android:gravity="center"
+                android:paddingLeft="@dimen/s6_font_size"
+                android:paddingRight="@dimen/s6_font_size"
+                android:text="خرید"
+                android:textColor="@color/colorPrimaryWhite"
+                android:textSize="@dimen/sss_font_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

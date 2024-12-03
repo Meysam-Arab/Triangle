@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_ca_box"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/s5_font_size"
+    android:layoutDirection="ltr"
+    android:orientation="horizontal"
+    android:weightSum="100">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/img_ca_avatar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/x1_font_size"
+        android:layout_marginTop="@dimen/s4_font_size"
+        android:layout_weight="20"
+        android:gravity="center"
+        android:src="@drawable/empty_contact"
+        app:civ_border_color="#7943446c"
+        app:civ_border_width="2dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="80"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s5_font_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1_font_size"
+            android:weightSum="100"
+            android:orientation="horizontal">
+            <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                android:id="@+id/txt_ca_Name"
+                android:layout_width="0dp"
+                android:layout_weight="80"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:gravity="center_vertical|left"
+                android:text="Amir"
+                android:maxLines="1"
+                android:textColor="#e9ececec"
+                android:textDirection="rtl"
+                android:textSize="@dimen/sss_font_size" />
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:layout_height="match_parent">
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/font_size"
+                    android:layout_gravity="left|center_vertical"
+                    android:background="#4bede2e2" />
+                <Space
+                    android:layout_width="@dimen/ss_font_size"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/img_ca_call"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:padding="@dimen/s4_font_size"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_icon_call" />
+            </FrameLayout>
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s5_font_size" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:background="#4bede2e2" />
+    </LinearLayout>
+</LinearLayout>

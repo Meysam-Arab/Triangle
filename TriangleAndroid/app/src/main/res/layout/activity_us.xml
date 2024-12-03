@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ir.fardan7eghlim.tri.Views.help.UsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="#b8b8b8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="درباره ما"
+                    android:textColor="#525252"
+                    android:textSize="@dimen/s4_font_size"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="#b8b8b8" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/s4_font_size"
+                android:layout_marginTop="@dimen/s6_font_size"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_aboutus_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x2_font_size"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/logo_aboutus" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/font_size"
+                    android:autoLink="web"
+                    android:gravity="center"
+                    android:text="www.f7e.ir"
+                    android:textColor="#525252"
+                    android:textSize="@dimen/s4_font_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="#b8b8b8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="دیگر محصولات"
+                    android:textColor="#525252"
+                    android:textSize="@dimen/s4_font_size"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="#b8b8b8" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="3"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/ll_morse_code"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x1_font_size"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/othapp_morce" />
+                    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="آموزش کد مورس"
+                        android:textColor="#525252"
+                        android:layout_marginTop="2dp"
+                        android:textSize="@dimen/s4_font_size"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_lucky_lord"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x1_font_size"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/othapp_luckylord" />
+                    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="بازی کلمات لاکی لرد"
+                        android:textColor="#525252"
+                        android:layout_marginTop="2dp"
+                        android:textSize="@dimen/s4_font_size"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_attentra"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x1_font_size"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/othapp_attentra" />
+                    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="حضور و غیاب آتنترا"
+                        android:textColor="#525252"
+                        android:layout_marginTop="2dp"
+                        android:textSize="@dimen/s4_font_size"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s5_font_size"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="#b8b8b8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="تماس با ما"
+                    android:textColor="#525252"
+                    android:textSize="@dimen/s4_font_size"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="#b8b8b8" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="10"
+                android:layoutDirection="ltr"
+                android:layout_height="wrap_content">
+                <ir.fardan7eghlim.tri.Models.widgets.customEditText
+                    android:id="@+id/cet_title"
+                    android:layout_width="0dp"
+                    android:layout_weight="8"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="اختیاری"
+                    android:textColor="#525252"
+                    android:textSize="@dimen/s4.1_font_size"
+                    android:textStyle="bold" />
+                <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="عنوان"
+                    android:textColor="#525252"
+                    android:textSize="@dimen/s4_font_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="10"
+                android:layoutDirection="ltr"
+                android:layout_height="wrap_content">
+                <ir.fardan7eghlim.tri.Models.widgets.customEditText
+                    android:id="@+id/cet_email"
+                    android:layout_width="0dp"
+                    android:layout_weight="8"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="اختیاری"
+                    android:textColor="#525252"
+                    android:textSize="@dimen/s4.1_font_size"
+                    android:textStyle="bold" />
+                <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="رایانامه"
+                    android:textColor="#525252"
+                    android:textSize="@dimen/s4_font_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="10"
+                android:layoutDirection="ltr"
+                android:layout_height="wrap_content">
+                <ir.fardan7eghlim.tri.Models.widgets.customEditText
+                    android:id="@+id/cet_phone"
+                    android:layout_width="0dp"
+                    android:layout_weight="8"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="اختیاری"
+                    android:textColor="#525252"
+                    android:textSize="@dimen/s4.1_font_size"
+                    android:textStyle="bold" />
+                <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="شماره تماس"
+                    android:textColor="#525252"
+                    android:textSize="@dimen/s4_font_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="10"
+                android:layoutDirection="ltr"
+                android:layout_height="wrap_content">
+                <ir.fardan7eghlim.tri.Models.widgets.customEditText
+                    android:id="@+id/cet_description"
+                    android:layout_width="0dp"
+                    android:layout_weight="8"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="ضروری"
+                    android:minLines="3"
+                    android:textColor="#525252"
+                    android:textSize="@dimen/s4.1_font_size"
+                    android:textStyle="bold" />
+                <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                    android:id="@+id/ctv_description"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="توضیحات"
+                    android:textColor="#525252"
+                    android:textSize="@dimen/s4_font_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <ir.fardan7eghlim.tri.Models.widgets.customButton
+                android:id="@+id/btn_send_feedback"
+                android:layout_width="match_parent"
+                android:background="@drawable/rounded_gray2"
+                android:text="ارسال"
+                android:layout_marginTop="@dimen/s6_font_size"
+                android:layout_marginLeft="@dimen/x2_font_size"
+                android:layout_marginRight="@dimen/x2_font_size"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

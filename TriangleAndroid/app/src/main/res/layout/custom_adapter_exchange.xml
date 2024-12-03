@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:background="@drawable/rounded_gray"
+    android:padding="@dimen/s5_font_size"
+    android:orientation="horizontal"
+    android:weightSum="100">
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_weight="20"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_exchange_change_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/s5_font_size"
+            android:paddingRight="@dimen/s5_font_size"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/exchange_increase" />
+        <TextView
+            android:id="@+id/txt_exchange_change"
+            android:layout_width="match_parent"
+            android:layout_weight="30"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:gravity="center"
+            android:text="0%"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryWhite"
+            android:textDirection="rtl"
+            android:textSize="@dimen/s4_font_size" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txt_exchange_price"
+        android:layout_width="0dp"
+        android:layout_weight="30"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:gravity="center_vertical|left"
+        android:text="3800 تومان"
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:textColor="#e9ececec"
+        android:textDirection="rtl"
+        android:textSize="@dimen/sss_font_size" />
+
+    <TextView
+        android:id="@+id/txt_exchange_title"
+        android:layout_width="0dp"
+        android:layout_weight="40"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:gravity="center_vertical|right"
+        android:text="دلار امریکا"
+        android:maxLines="1"
+        android:layout_marginRight="@dimen/s5_font_size"
+        android:textColor="#e9ececec"
+        android:textDirection="rtl"
+        android:textSize="@dimen/sss_font_size" />
+    <ImageView
+        android:id="@+id/img_exchange_avatar"
+        android:layout_width="0dp"
+        android:layout_weight="10"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/btn_icon_exchange" />
+</LinearLayout>

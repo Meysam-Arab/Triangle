@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:layout_marginBottom="@dimen/font_size"
+    android:layout_marginTop="@dimen/ss_font_size"
+    android:layout_marginLeft="@dimen/s4_font_size"
+    android:layout_marginRight="@dimen/s4_font_size"
+    android:background="@drawable/rounded_purpel1"
+    android:id="@+id/option_dialog_bg"
+    android:orientation="vertical">
+
+
+    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_box_dialog"
+        android:layout_marginTop="@dimen/ss_font_size"
+        android:layout_marginBottom="@dimen/ss_font_size"
+        android:layout_weight="1"
+        android:paddingRight="@dimen/ss_font_size"
+        android:paddingLeft="@dimen/ss_font_size"
+        android:textDirection="rtl"
+        android:textColor="@color/silver"
+        android:gravity="center"
+        android:textSize="@dimen/sss_font_size" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/s6_font_size"
+        android:layout_weight="1">
+
+        <ir.fardan7eghlim.tri.Models.widgets.customButton
+            android:text="btn_dialog_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_mess_01"
+            android:layout_marginRight="@dimen/s5_font_size"
+            android:layout_marginLeft="@dimen/s5_font_size"
+            android:textColor="@color/silver"
+            android:background="@drawable/rounded_gray"
+            android:layout_marginBottom="2dp"
+            android:maxLines="1"
+            android:textSize="@dimen/s4_font_size"
+            android:layout_weight="1" />
+        <ir.fardan7eghlim.tri.Models.widgets.customButton
+            android:text="btn_dialog_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_mess_02"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/s5_font_size"
+            android:layout_marginLeft="@dimen/s5_font_size"
+            android:textColor="@color/silver"
+            android:background="@drawable/rounded_gray"
+            android:maxLines="1"
+            android:textSize="@dimen/s4_font_size"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

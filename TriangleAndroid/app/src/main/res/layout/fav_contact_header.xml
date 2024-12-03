@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x2_font_size" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:weightSum="100">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/s5_font_size"
+            android:layout_weight="25"
+            android:background="#b4ede2e2" />
+
+        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+            android:id="@+id/txt_fav_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:text="مخاطبین مورد علاقه"
+            android:textColor="@color/drp_blue"
+            android:textSize="@dimen/s4_font_size" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/s5_font_size"
+            android:layout_weight="25"
+            android:background="#b4ede2e2" />
+    </LinearLayout>
+</FrameLayout>

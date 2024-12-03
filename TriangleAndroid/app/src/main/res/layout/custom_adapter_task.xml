@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_ca_box_task"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/s5_font_size"
+    android:layoutDirection="rtl"
+    android:background="@drawable/rounded_gray2"
+    android:orientation="horizontal"
+    android:weightSum="100">
+    <ImageView
+        android:id="@+id/img_ca_logo_task"
+        android:layout_width="0dp"
+        android:layout_gravity="right"
+        android:layout_weight="5"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="2dp"
+        app:srcCompat="@drawable/btn_icon_call" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:paddingRight="@dimen/s6_font_size"
+        android:layout_weight="70"
+        android:orientation="vertical">
+        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+            android:id="@+id/txt_ca_title_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:gravity="right"
+            android:text="task01"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#e9ececec"
+            android:textDirection="rtl"
+            android:textSize="@dimen/s4_font_size" />
+        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+            android:id="@+id/txt_ca_time_task"
+            android:layout_width="match_parent"
+            android:layout_weight="80"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:gravity="right"
+            android:text="Amir"
+            android:maxLines="1"
+            android:textColor="#e9ececec"
+            android:textDirection="rtl"
+            android:textSize="@dimen/s5_font_size" />
+
+    </LinearLayout>
+
+    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+        android:id="@+id/txt_ca_remndTime_task"
+        android:layout_width="0dp"
+        android:layout_weight="25"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:gravity="left"
+        android:text="00:00"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textColor="#e9ececec"
+        android:textDirection="rtl"
+        android:textSize="@dimen/s5_font_size" />
+</LinearLayout>

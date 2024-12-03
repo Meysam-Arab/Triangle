@@ -1,0 +1,381 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ir.fardan7eghlim.tri.Views.Home.Fragments.CalndrFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_white2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x1_font_size"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <ImageView
+                        android:id="@+id/btn_next_month"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15"
+                        android:adjustViewBounds="true"
+                        android:paddingLeft="@dimen/s4_font_size"
+                        android:paddingRight="@dimen/s5_font_size"
+                        android:rotation="-90"
+                        android:src="@drawable/triangle_a" />
+
+                    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                        android:id="@+id/txt_shamsi_date"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:gravity="center"
+                        android:text="...."
+                        android:textColor="@color/black2"
+                        android:textDirection="rtl"
+                        android:textSize="@dimen/sss_font_size"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/btn_prev_month"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15"
+                        android:adjustViewBounds="true"
+                        android:paddingLeft="@dimen/s5_font_size"
+                        android:paddingRight="@dimen/s4_font_size"
+                        android:rotation="90"
+                        android:src="@drawable/triangle_a" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:id="@+id/txt_miladi_date"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="49"
+                        android:gravity="center"
+                        android:text="...."
+                        android:textColor="@color/glassblack"
+                        android:textDirection="ltr"
+                        android:textSize="@dimen/s4.1_font_size"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" />
+
+                    <ir.fardan7eghlim.tri.Models.widgets.customTextView2
+                        android:id="@+id/txt_ghamari_date"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="49"
+                        android:gravity="center"
+                        android:text="...."
+                        android:textColor="@color/glassblack"
+                        android:textDirection="rtl"
+                        android:textSize="@dimen/s4.1_font_size"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ir.mirrajabi.persiancalendar.PersianCalendarView
+                    android:id="@+id/persian_calendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="290dp"
+                    app:pcv_typefacePath="fonts/DimaTraffic.ttf"
+                    app:pcv_headersTypefacePath="fonts/DimaTraffic.ttf"
+                    app:pcv_colorBackground="#f7f8f9"
+                    app:pcv_colorDayName="#bab6b6"
+                    app:pcv_colorHoliday="#ff8b06"
+                    app:pcv_colorHolidaySelected="#f4ea2f"
+                    app:pcv_headersFontSize="@dimen/s4_font_size"
+                    app:pcv_fontSize="@dimen/s4_font_size"
+                    app:pcv_colorNormalDay="#000000"
+                    app:pcv_colorNormalDaySelected="#f5f196"
+                    app:pcv_eventUnderlineColor="#79d4ff" />
+
+                <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                    android:id="@+id/txt_events_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="right"
+                    android:maxLines="3"
+                    android:layout_marginRight="@dimen/s6_font_size"
+                    android:layout_marginBottom="@dimen/s6_font_size"
+                    android:text="...."
+                    android:textColor="@color/gray"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/s5_font_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_oghat_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s5_font_size"
+                android:background="@drawable/rounded_white2"
+                android:orientation="vertical">
+
+                <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                    android:id="@+id/txt_oghat_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="..."
+                    android:textColor="@color/black2"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/s4_font_size"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="نیمه شب"
+                            android:textColor="@color/glassblack"
+                            android:textSize="@dimen/s5.1_font_size" />
+
+                        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                            android:id="@+id/txt_pray_nimeshab"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="6"
+                            android:gravity="center_horizontal|top"
+                            android:text="99:99"
+                            android:textColor="@color/black2"
+                            android:textSize="@dimen/s5_font_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="مغرب"
+                            android:textColor="@color/glassblack"
+                            android:textSize="@dimen/s5.1_font_size" />
+
+                        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                            android:id="@+id/txt_pray_maghreb"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="6"
+                            android:gravity="center_horizontal|top"
+                            android:text="99:99"
+                            android:textColor="@color/black2"
+                            android:textSize="@dimen/s5_font_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="غروب"
+                            android:textColor="@color/glassblack"
+                            android:textSize="@dimen/s5.1_font_size" />
+
+                        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                            android:id="@+id/txt_pray_ghoroob"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="6"
+                            android:gravity="center_horizontal|top"
+                            android:text="99:99"
+                            android:textColor="@color/black2"
+                            android:textSize="@dimen/s5_font_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="ظهر"
+                            android:textColor="@color/glassblack"
+                            android:textSize="@dimen/s5.1_font_size" />
+
+                        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                            android:id="@+id/txt_pray_zohr"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="6"
+                            android:gravity="center_horizontal|top"
+                            android:text="99:99"
+                            android:textColor="@color/black2"
+                            android:textSize="@dimen/s5_font_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="طلوع"
+                            android:textColor="@color/glassblack"
+                            android:textSize="@dimen/s5.1_font_size" />
+
+                        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                            android:id="@+id/txt_pray_toloo"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="6"
+                            android:gravity="center_horizontal|top"
+                            android:text="99:99"
+                            android:textColor="@color/black2"
+                            android:textSize="@dimen/s5_font_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="صبح"
+                            android:textColor="@color/glassblack"
+                            android:textSize="@dimen/s5.1_font_size" />
+
+                        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                            android:id="@+id/txt_pray_sobh"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="6"
+                            android:gravity="center_horizontal|top"
+                            android:text="99:99"
+                            android:textColor="@color/black2"
+                            android:textSize="@dimen/s5_font_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s5_font_size"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/s5_font_size"
+                    android:layout_height="wrap_content">
+                    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                        android:id="@+id/txt_tasksTodo_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_white2"
+                        android:text="رویدادهای این روز"
+                        android:textColor="@color/black2"
+                        android:textDirection="rtl"
+                        android:textSize="@dimen/s4_font_size"
+                        android:textStyle="bold" />
+                    <FrameLayout
+                        android:id="@+id/fr_add_instask"
+                        android:layout_width="@dimen/font_size"
+                        android:layout_gravity="center_vertical|left"
+                        android:paddingTop="2dp"
+                        android:layout_marginLeft="@dimen/s4_font_size"
+                        android:layout_height="@dimen/font_size">
+                        <ImageView
+                            android:id="@+id/img_add_instask"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center"
+                            android:src="@drawable/triangle_a"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="+"
+                            android:layout_marginBottom="1dp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sss_font_size"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </FrameLayout>
+
+                <ir.fardan7eghlim.tri.Models.widgets.WrapContentListView
+                    android:id="@+id/lv_list_today_tasks"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="@dimen/s5_font_size"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

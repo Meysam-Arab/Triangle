@@ -1,0 +1,548 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ir.fardan7eghlim.tri.Views.Home.Fragments.WeatherFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="100"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50">
+            <ImageView
+                android:id="@+id/img_weather"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/ss_font_size"
+                android:layout_marginBottom="@dimen/x1_font_size"
+                android:adjustViewBounds="true"
+                android:src="@drawable/w_1a" />
+            <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                android:id="@+id/txt_city_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s6_font_size"
+                android:layout_marginLeft="@dimen/s6_font_size"
+                android:gravity="top|left"
+                android:text="تهران"
+                android:textColor="@color/colorPrimaryWhite"
+                android:textDirection="rtl"
+                android:textSize="@dimen/s_font_size"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/s4_font_size"
+                android:layout_gravity="bottom"
+                android:weightSum="100">
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical">
+
+
+                    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                        android:id="@+id/txt_weather_stutus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal|bottom"
+                        android:maxLines="1"
+                        android:text="نسیم"
+                        android:textColor="@color/colorPrimaryWhite"
+                        android:textSize="@dimen/s_font_size"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                            android:id="@+id/txt_weather_max"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top|right"
+                            android:layout_marginBottom="@dimen/s6_font_size"
+                            android:layout_weight="3"
+                            android:gravity="center_horizontal|top"
+                            android:text="00"
+                            android:textColor="@color/drp_orange"
+                            android:textSize="@dimen/ss_font_size"
+                            android:textStyle="bold"/>
+
+                        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                            android:id="@+id/txt_weather_temp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="00"
+                            android:layout_marginTop="@dimen/s5_font_size"
+                            android:textColor="@color/colorPrimaryWhite"
+                            android:textSize="@dimen/font_size"
+                            android:textStyle="bold" />
+
+                        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                            android:id="@+id/txt_weather_min"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top|left"
+                            android:layout_marginBottom="@dimen/s6_font_size"
+                            android:layout_weight="3"
+                            android:gravity="center_horizontal|top"
+                            android:text="00"
+                            android:textColor="@color/drp_blue"
+                            android:textSize="@dimen/ss_font_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+        </FrameLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"/>
+        <LinearLayout
+            android:id="@+id/ll_pre_weather"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_gray2"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1">
+
+
+                    <ImageView
+                        android:id="@+id/img_weather_pr_03"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/s6_font_size"
+                        android:layout_marginBottom="@dimen/ss_font_size"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/w_1a" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+
+                            <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                                android:id="@+id/txt_weather_max_pr_03"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom|right"
+                                android:layout_weight="3"
+                                android:gravity="center_horizontal|bottom"
+                                android:text="00"
+                                android:textColor="@color/drp_orange"
+                                android:textSize="@dimen/s3.1_font_size"
+                                android:textStyle="bold" />
+                            <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                                android:id="@+id/txt_weather_min_pr_03"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom|left"
+                                android:layout_weight="3"
+                                android:gravity="center_horizontal|bottom"
+                                android:text="00"
+                                android:textColor="@color/drp_blue"
+                                android:textSize="@dimen/s3.1_font_size"
+                                android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                        android:id="@+id/txt_weather_title_pr_03"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal|top"
+                        android:maxLines="1"
+                        android:text="امروز"
+                        android:textColor="@color/colorPrimaryWhite"
+                        android:textSize="@dimen/s4_font_size"
+                        android:textStyle="bold" />
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_gray2"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1">
+
+
+                    <ImageView
+                        android:id="@+id/img_weather_pr_02"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/s6_font_size"
+                        android:layout_marginBottom="@dimen/ss_font_size"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/w_1a" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+
+                        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                            android:id="@+id/txt_weather_max_pr_02"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom|right"
+                            android:layout_weight="3"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="00"
+                            android:textColor="@color/drp_orange"
+                            android:textSize="@dimen/s3.1_font_size"
+                            android:textStyle="bold" />
+                        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                            android:id="@+id/txt_weather_min_pr_02"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom|left"
+                            android:layout_weight="3"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="00"
+                            android:textColor="@color/drp_blue"
+                            android:textSize="@dimen/s3.1_font_size"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                        android:id="@+id/txt_weather_title_pr_02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal|top"
+                        android:maxLines="1"
+                        android:text="امروز"
+                        android:textColor="@color/colorPrimaryWhite"
+                        android:textSize="@dimen/s4_font_size"
+                        android:textStyle="bold" />
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_gray2"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1">
+
+
+                    <ImageView
+                        android:id="@+id/img_weather_pr_01"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/s6_font_size"
+                        android:layout_marginBottom="@dimen/ss_font_size"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/w_1a" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+
+                        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                            android:id="@+id/txt_weather_max_pr_01"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom|right"
+                            android:layout_weight="3"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="00"
+                            android:textColor="@color/drp_orange"
+                            android:textSize="@dimen/s3.1_font_size"
+                            android:textStyle="bold" />
+                        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                            android:id="@+id/txt_weather_min_pr_01"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom|left"
+                            android:layout_weight="3"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="00"
+                            android:textColor="@color/drp_blue"
+                            android:textSize="@dimen/s3.1_font_size"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                        android:id="@+id/txt_weather_title_pr_01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal|top"
+                        android:maxLines="1"
+                        android:text="امروز"
+                        android:textColor="@color/colorPrimaryWhite"
+                        android:textSize="@dimen/s4_font_size"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_gray2"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1">
+
+
+                    <ImageView
+                        android:id="@+id/img_weather_pr_06"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/s6_font_size"
+                        android:layout_marginBottom="@dimen/ss_font_size"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/w_1a" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+
+                        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                            android:id="@+id/txt_weather_max_pr_06"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom|right"
+                            android:layout_weight="3"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="00"
+                            android:textColor="@color/drp_orange"
+                            android:textSize="@dimen/s3.1_font_size"
+                            android:textStyle="bold" />
+                        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                            android:id="@+id/txt_weather_min_pr_06"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom|left"
+                            android:layout_weight="3"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="00"
+                            android:textColor="@color/drp_blue"
+                            android:textSize="@dimen/s3.1_font_size"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                        android:id="@+id/txt_weather_title_pr_06"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal|top"
+                        android:maxLines="1"
+                        android:text="امروز"
+                        android:textColor="@color/colorPrimaryWhite"
+                        android:textSize="@dimen/s4_font_size"
+                        android:textStyle="bold" />
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_gray2"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1">
+
+
+                    <ImageView
+                        android:id="@+id/img_weather_pr_05"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/s6_font_size"
+                        android:layout_marginBottom="@dimen/ss_font_size"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/w_1a" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+
+                        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                            android:id="@+id/txt_weather_max_pr_05"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom|right"
+                            android:layout_weight="3"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="00"
+                            android:textColor="@color/drp_orange"
+                            android:textSize="@dimen/s3.1_font_size"
+                            android:textStyle="bold" />
+                        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                            android:id="@+id/txt_weather_min_pr_05"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom|left"
+                            android:layout_weight="3"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="00"
+                            android:textColor="@color/drp_blue"
+                            android:textSize="@dimen/s3.1_font_size"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                        android:id="@+id/txt_weather_title_pr_05"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal|top"
+                        android:maxLines="1"
+                        android:text="امروز"
+                        android:textColor="@color/colorPrimaryWhite"
+                        android:textSize="@dimen/s4_font_size"
+                        android:textStyle="bold" />
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_gray2"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1">
+
+
+                    <ImageView
+                        android:id="@+id/img_weather_pr_04"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/s6_font_size"
+                        android:layout_marginBottom="@dimen/ss_font_size"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/w_1a" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+
+                        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                            android:id="@+id/txt_weather_max_pr_04"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom|right"
+                            android:layout_weight="3"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="00"
+                            android:textColor="@color/drp_orange"
+                            android:textSize="@dimen/s3.1_font_size"
+                            android:textStyle="bold" />
+                        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                            android:id="@+id/txt_weather_min_pr_04"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom|left"
+                            android:layout_weight="3"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="00"
+                            android:textColor="@color/drp_blue"
+                            android:textSize="@dimen/s3.1_font_size"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                        android:id="@+id/txt_weather_title_pr_04"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal|top"
+                        android:maxLines="1"
+                        android:text="امروز"
+                        android:textColor="@color/colorPrimaryWhite"
+                        android:textSize="@dimen/s4_font_size"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+            android:id="@+id/txt_last_update_weather"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginRight="2dp"
+            android:textDirection="rtl"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryWhite"
+            android:text="آخرین به روز رسانی: ندارد"
+            android:layout_weight="6"/>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:id="@+id/ll_news_box"
+    android:background="@drawable/rounded_gray2"
+    android:padding="@dimen/s4_font_size"
+    android:orientation="vertical"
+    android:weightSum="100">
+    <ir.fardan7eghlim.tri.Models.widgets.customTextView2
+        android:id="@+id/txt_news_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:layout_marginBottom="@dimen/s5_font_size"
+        android:gravity="center_vertical|right"
+        android:text="خلاصه خبر"
+        android:maxLines="3"
+        android:maxLength="300"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:textColor="#e9ececec"
+        android:textDirection="rtl"
+        android:textSize="@dimen/s3.1_font_size" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:layout_weight="30">
+        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+            android:id="@+id/txt_news_description"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center_vertical|left"
+            android:text="منبع"
+            android:maxLines="1"
+            android:textColor="@color/drp_orange"
+            android:textDirection="rtl"
+            android:textSize="@dimen/s5_font_size" />
+        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+            android:id="@+id/txt_news_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center_vertical|right"
+            android:text="تاریخ"
+            android:maxLines="1"
+            android:textColor="@color/drp_gray"
+            android:textDirection="rtl"
+            android:textSize="@dimen/s5_font_size" />
+    </LinearLayout>
+</LinearLayout>

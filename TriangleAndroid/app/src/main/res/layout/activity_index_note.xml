@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg06"
+    android:orientation="vertical"
+    tools:context="ir.fardan7eghlim.tri.Views.Note.IndexNoteActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/font_size"
+        android:layout_marginBottom="@dimen/s6_font_size"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/s5_font_size"
+            android:layout_weight="3"
+            android:background="#b4ede2e2" />
+
+        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="یادداشت ها"
+            android:textColor="@color/colorPrimaryWhite"
+            android:textSize="@dimen/s4_font_size" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/s5_font_size"
+            android:layout_weight="3"
+            android:background="#b4ede2e2" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/img_add_note"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:padding="@dimen/s6_font_size"
+        app:srcCompat="@drawable/btn_icon_add" />
+    <com.etsy.android.grid.StaggeredGridView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/grid_view_add_note"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="72"
+        android:visibility="gone"
+        app:item_margin="8dp"
+        app:column_count="2" />
+    <LinearLayout
+        android:id="@+id/ll_no_note_add_note"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="72"
+        android:gravity="center"
+        android:paddingBottom="@dimen/x2_font_size"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="@dimen/x2_font_size"
+            android:layout_height="@dimen/x2_font_size"
+            android:padding="@dimen/s6_font_size"
+            app:srcCompat="@drawable/btn_icon_notepad" />
+        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textDirection="rtl"
+            android:gravity="center"
+            android:paddingTop="@dimen/s6_font_size"
+            android:textSize="@dimen/ss_font_size"
+            android:textColor="@color/colorPrimaryWhite"
+            android:text="هیچ یادداشتی وجود ندارد!" />
+        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textDirection="rtl"
+            android:gravity="center"
+            android:paddingTop="@dimen/s6_font_size"
+            android:textSize="@dimen/s3.1_font_size"
+            android:textColor="@color/colorPrimaryWhite"
+            android:text="لطفا برای افزودن یادداشت بر روی + کلیک کنید." />
+    </LinearLayout>
+</LinearLayout>

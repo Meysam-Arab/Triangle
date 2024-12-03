@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btn_on_footer"
+    android:layout_marginBottom="@dimen/s5_font_size"
+    android:layoutDirection="ltr"
+    android:orientation="horizontal"
+    android:weightSum="100">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/x1_font_size"
+        android:layout_marginTop="@dimen/s4_font_size"
+        android:layout_weight="20"
+        android:gravity="center"
+        android:src="@drawable/all_contacts" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="80"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s5_font_size" />
+
+            <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1_font_size"
+                android:layout_marginBottom="2dp"
+                android:gravity="center_vertical|left"
+                android:text="نمایش همه ی مخاطبین"
+                android:maxLines="1"
+                android:textSize="@dimen/s4_font_size"
+                android:textColor="#e9ececec"
+                android:textDirection="rtl"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s5_font_size" />
+    </LinearLayout>
+</LinearLayout>

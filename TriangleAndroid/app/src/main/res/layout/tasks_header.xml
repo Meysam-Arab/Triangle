@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s6_font_size" />
+
+    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+        android:id="@+id/txt_fav_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingRight="@dimen/font_size"
+        android:text="هیچ کاری مشخص نشده است"
+        android:textColor="@color/drp_gray"
+        android:textSize="@dimen/s4_font_size" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sss_font_size" />
+</LinearLayout>

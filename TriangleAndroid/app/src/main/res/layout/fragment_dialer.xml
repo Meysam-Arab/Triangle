@@ -1,0 +1,53 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ir.fardan7eghlim.tri.Views.Home.Fragments.DialerFragment">
+
+    <ListView
+        android:id="@+id/lv_list_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/x1_font_size"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1_font_size"
+        android:weightSum="100"
+        android:orientation="horizontal">
+        <ir.fardan7eghlim.tri.Models.widgets.customEditText
+            android:id="@+id/edt_contcact_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="76"
+            android:gravity="center_vertical|left"
+            android:text=""
+            android:maxLines="1"
+            android:hint="جستجو کنید یا شماره بگیرید..."
+            android:textColorHint="#e9ececec"
+            android:textColor="@color/colorPrimaryWhite"
+            android:textSize="@dimen/s4_font_size" />
+        <ImageView
+            android:id="@+id/btn_dialer_contact"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:src="@drawable/dialer_contact"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/btn_add_contact"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:src="@drawable/add_contact"/>
+    </LinearLayout>
+</FrameLayout>
