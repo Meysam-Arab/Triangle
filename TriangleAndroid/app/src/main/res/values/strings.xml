@@ -1,0 +1,253 @@
+<resources>
+    <string name="app_name">مثلث</string>
+    <string name="title_activity_aboutus">درباره ما</string>
+    <string name="title_activity_home">سه</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="OPEN_WEATHER_MAP_API_KEY">4bf8833b09723601cfa1a5f1c3326918</string>
+
+    <string name="title_activity_user_register">ثبت نام</string>
+    <string name="title_activity_user_home">پروفایل</string>
+
+    <string name="prompt_user_name">نام کاربری</string>
+
+    <string name="btn_Register">ثبت نام</string>
+    <string name="btn_Exit">خروج</string>
+    <string name="btn_AboutUs">درباره ما</string>
+    <string name="btn_Profile">پروفایل</string>
+    <string name="btn_Settings">تنظیمات</string>
+    <string name="btn_Share">اشتراک گذاری</string>
+    <string name="btn_Rate">امتیاز دادن</string>
+    <string name="btn_OtherProducts">برنامه های دیگر</string>
+    <string name="btn_OK">موافقم</string>
+    <string name="btn_Download">دانلود</string>
+    <string name="btn_Yes">بله</string>
+    <string name="btn_No">خیر</string>
+    <string name="btn_delete_message">حذف پیام</string>
+    <string name="btn_Accept">قبول کردن</string>
+    <string name="btn_Decline">رد کردن</string>
+
+
+    <string name="lbl_followeup">کد رهگیری:</string>
+    <string name="lbl_retry">دوباره</string>
+    <string name="lbl_exit">خروج</string>
+    <string name="lbl_send">ارسال</string>
+    <string name="lbl_second">ثانیه</string>
+    <string name="lbl_reward">جایزه</string>
+    <string name="lbl_version">نسخه برنامه</string>
+
+
+    <string name="et_Email">ایمیل</string>
+    <string name="et_UserName">نام کاربری</string>
+    <string name="et_Password">رمز عبور</string>
+    <string name="et_RepPassword">تکرار رمز عبور</string>
+
+    <string name="dlg_Yes">بله</string>
+    <string name="dlg_No">خیر</string>
+    <string name="dlg_msg_Exit">اطمینان دارید؟</string>
+    <string name="dlg_Wait">لطفا صبر کنید...</string>
+    <string name="dlg_OperationSuccess">عملیات موفقیت آمیز</string>
+    <string name="dlg_OperationFail">عملیات ناموفق</string>
+
+
+    <string name="msg_OperationSuccess">عملیات با موفقیت انجام شد</string>
+    <string name="msg_OperationFail">انجام عملیات با مشکل مواجه شد</string>
+    <string name="msg_OperationError">عملیات با خطا مواجه شد</string>
+    <string name="msg_MessageNotSpecified">نا مشخص</string>
+    <string name="msg_ConnectionError">خطا در برقراری ارتباط</string>
+    <string name="msg_OldVersion">یه نسخه جدید از برنامه منتشر شده است</string>
+    <string name="msg_PressBackAgain">دوباره دکمه بازگشت را بفشارید</string>
+    <string name="msg_VersionExpired">آپدیت جدید از برنامه موجود می باشد</string>
+    <string name="msg_VersionExpired_02">بایستی نسخه جدید برنامه نصب شود</string>
+    <string name="msg_RateRegistered">نظر شما ثبت شد</string>
+    <string name="msg_RateNotRegistered">نظر شما ثبت نشد</string>
+    <string name="msg_ReportSent">ارسال شد</string>
+    <string name="msg_ReportNotSent">ارسال نشد</string>
+    <string name="msg_AlredyRated">نظر شما قبلا دریافت شده است</string>
+    <string name="msg_AreYouSure"> اطمینان دارید؟ </string>
+    <string name="msg_AdvertismentShowCompleted"> تبلیغ با موفقیت به اتمام رسید </string>
+    <string name="msg_MustRegister"> باید ثبت نام کنی </string>
+    <string name="msg_MesageBoxEmpty"> صندوق پیام خالی می باشد </string>
+    <string name="msg_InNewVersion"> در نسخه های بعدی باز میشه </string>
+    <string name="msg_PurchaseSuccess"> پرداخت با موفقیت انجام شد </string>
+    <string name="msg_RegisterSuccess"> ثبت نام با موفقیت انجام شد </string>
+    <string name="msg_StatusDeleted"> حذف شده </string>
+    <string name="msg_ErrorProblemOccured"> متاسفانه مشکلی بوجود آمده. لطفا دوباره سعی کنید </string>
+    <string name="msg_RequestSent"> درخواست با موفقیت ارسال شد </string>
+    <string name="msg_RequestNotSent"> درخواست ارسال نشد </string>
+    <string name="msg_EmptyList"> لیست خالی می باشد </string>
+    <string name="msg_EmptySearchList"> جستجو نتیجه نداشت </string>
+    <string name="msg_EmptyRecommendedList"> فعلا پیشنهادی وجود ندارد </string>
+    <string name="msg_ShowTutorial"> می خواهید آموزش را مشاهده کنید؟ </string>
+    <string name="msg_SaveChanges"> تغییرات ذخیره شود؟ </string>
+    <string name="msg_ChangesDosntSavedAreYouSure"> تغییرات ذخیره نشده است، خارج میشوید؟ </string>
+    <string name="msg_ErrorInvalidPublicKeyCode"> کلید نا معتبر </string>
+    <string name="msg_ErrorNotTimeDrawCode"> زمان این قرعه کشی فرا نرسیده </string>
+    <string name="msg_VersionExpired_Updating">لطفا شکیبا باشید، برنامه در حال به روز رسانی می باشد. اگر پس از به روز رسانی برنامه مشکلی وجود داشت لطفا برنامه را پاک کنید و از اول نصب کنید</string>
+    <string name="msg_AdAlreadyWatched"> قبلا نگاه کردی </string>
+    <string name="msg_ChooseAmount"> مقدار شارژ را انتخاب نمایید </string>
+
+
+    <string name="report_AgainstLaw">خلاف قوانین</string>
+    <string name="report_OtherReasons">دلایل دیگه</string>
+    <string name="report_WrongPicture">عکس اشتباه</string>
+    <string name="report_WrongWriting">نگارش اشتباه</string>
+    <string name="report_WrongSpelling">غلط املایی</string>
+    <string name="report_WrongCategory">دسته اشتباه</string>
+    <string name="report_MoralProblem">مشکل اخلاقی</string>
+    <string name="report_CreedProblem">مشکل مذهبی</string>
+    <string name="report_TribalProblem">مشکل قومیتی</string>
+    <string name="report_PoliticalProblem">مشکل سیاسی</string>
+
+
+    <string name="error_undefined">نامشخص</string>
+    <string name="error_user_exist">کاربر موجود می باشد</string>
+    <string name="error_item_exist">از قبل موجود می باشد</string>
+    <string name="error_register_fail">ثبت نام با شکست مواجه شد</string>
+    <string name="error_insert_fail">ثبت با شکست مواجه شد</string>
+    <string name="error_login_fail">نام کاربری یا رمز عبور اشتباه می باشد - به فارسی یا انگلیسی بودن اعداد و حروف توجه کنید</string>
+    <string name="error_token_mismach">ناسازگاری توکن</string>
+    <string name="error_defective_information">اطلاعات ورودی ناقص می باشد</string>
+    <string name="error_invalid_email">ایمیل نامعتبر</string>
+    <string name="error_token_blacklisted">توکن بلک لیست شده</string>
+    <string name="error_invalid_file_size">حجم فایل غیر مجاز</string>
+    <string name="error_update_fail">به روز رسانی با شکست مواجه شد</string>
+    <string name="error_unauthorized_user">کاربر غیر مجاز</string>
+    <string name="error_delete_fail">حذف با شکست مواجه شد</string>
+    <string name="error_operation_fail">عملیات شکست خورد</string>
+    <string name="error_mismatch_password">رمز قدیمیت غلطه</string>
+    <string name="error_item_not_exist">مورد مورد نظر موجود نمی باشد</string>
+    <string name="error_not_enough_score">اعتبار شما کافی نمی باشد</string>
+    <string name="error_auth_fail">تصدیق هویت با شکست مواجه شد. لطفا دومرتبه وارد شوید</string>
+    <string name="error_field_required">این فلید لازم است</string>
+    <string name="error_incorrect_password">رمز عبور نادرست است</string>
+    <string name="error_invalid_password">رمز عبور کوتاه است</string>
+    <string name="error_no_change_found">تغییری انجام نشده</string>
+    <string name="error_invalid_piblic_key">کلید نا معتبر</string>
+    <string name="error_email_exist">ایمیل تکراری می باشد</string>
+    <string name="error_egg_alredy_given">شما جایزه امروز را به دست آورده اید!</string>
+    <string name="error_not_time_draw">زمان این قرعه کشی نرسیده</string>
+    <string name="error_not_enough_balance">اعتبار کافی وجود ندارد</string>
+    <string name="error_not_enough_amount">مقدار شارژ انتخاب شده نا معتبر می باشد</string>
+    <string name="error_user_canceled">کاربر از ادامه ی انجام عملیات انصراف داد</string>
+    <string name="error_invalid_invite_code">کد دعوت نامعتبره!!</string>
+    <string name="error_invalid_phone_number">شماره تلفن وارد شده معتبر نمی باشد. نمونه شماره معتبر: 09123456987</string>
+    <string name="error_connecting_to_server">خطا در ارتباط!!</string>
+    <string name="error_show_advertisment">خطا در نمایش تبلیغ!!</string>
+    <string name="error_no_advertisment">فعلا دیگه تبلیغی برا نمایش نیست!!</string>
+    <string name="error_advertisment_expired">تبلیغ دیگه معتبر نیست!!</string>
+    <string name="error_advertisment_faulty">تبلیغ ناقص پخش شد!!</string>
+    <string name="error_exceed_register_count">تعداد مجاز ثبت نام با این گوشی تلفن تمام شده!!</string>
+    <string name="error_wrong_char_set">کاراکتر غیر مجاز</string>
+    <string name="error_weak_connection">اتصال خیلی ضعیفه یا وجود نداره</string>
+    <string name="error_please_wait">لطفا بعدا دوباره سعی کن</string>
+    <string name="error_alredy_given">قبلا گرفتی!</string>
+    <string name="error_no_more">دیگه نمیشه!</string>
+    <string name="error_bazzar_login_or_network_problem">یه خطا پیش اومده.. احتمالا در کافه بازار حساب کاربری نداری یا وارد حساب کاربری خودت در کافه بازار نشدی ... اگر حساب داری و وارد شدی پیشنهاد میشه چند دقیقه صبر کنی ...</string>
+    <string name="msg_ErrorOpponentAccepted">رقیب درخواست را قبول کرده</string>
+    <string name="msg_ErrorOpponentCanceled">رقیب درخواست را حذف کرده</string>
+    <string name="error_token_invalid">اطلاعات ورود باطل شده</string>
+    <string name="error_charge_service_disabled">سرویس شارژ اپراتور مورد نظر غیر فعال می باشد</string>
+    <string name="error_weather_get">اطلاعات آب و هوا در دسترس نمی باشد</string>
+    <string name="error_permission_access">اجازه دسترسی های مورد نیاز صادر نشده</string>
+    <string name="error_invalid_time">لطفا ساعت را انتخاب نمایید</string>
+    <string name="error_invalid_day_of_month">لطفا روز را انتخاب نمایید</string>
+    <string name="error_invalid_day_of_week">لطفا روز هفته را انتخاب نمایید</string>
+    <string name="error_invalid_date">لطفا تاریخ مورد نظر خود را مشخص نمایید</string>
+    <string name="error_invalid_description">لطفا توضیحات را وارد نمایید</string>
+    <string name="error_start_date_end_date_most_be_more_than_seven_days">تعداد روزهای بین تاریخ شروع و پایان بایستی بیش از هفت روز باشد</string>
+    <string name="error_day_most_be_between_start_date_end_date">روز انتخابی بایستی بین تاریخ شروع و پایان وجود داشته باشد</string>
+    <string name="error_select_day_of_week">لطفا یک روز هفته را انتخاب نمایید</string>
+
+
+    <!-- Strings related to login -->
+    <string name="error_unauthorized_access">دسترسی غیر مجاز</string>
+
+
+    <string name="prompt_password">رمز عبور</string>
+
+    <string name="ShareSubject">مثلث</string>
+    <string name="ShareBody">اپ رایگان با دسترسی سریع مثلث رو دانلود کن: http://www.triii.ir</string>
+    <string name="ShareVia">دسترسی از طریق</string>
+
+    <string name="Amount">مبلغ:</string>
+    <string name="InviteCode">کد دعوت:</string>
+    <string name="Date">تاریخ</string>
+    <string name="Description">توضیحات:</string>
+    <string name="Email">ایمیل:</string>
+    <string name="End">پایان</string>
+    <string name="Gender">جنسیت:</string>
+    <string name="Password">رمز عبور:</string>
+    <string name="Cost">قیمت:</string>
+    <string name="Score">امتیاز :</string>
+    <string name="Start">شروع</string>
+    <string name="Time">ساعت</string>
+    <string name="Title">عنوان:</string>
+    <string name="Type">نوع:</string>
+    <string name="btn_Add">اضافه کردن</string>
+    <string name="btn_Update">به روز رسانی</string>
+    <string name="msg_write_something">چیزی بنویسید...</string>
+    <string name="userName">نام کاربری:</string>
+    <string name="Communicate">ارتباطات با سازندگان</string>
+    <string name="Details">جزئیات</string>
+    <string name="Select_Picture">انتخاب عکس</string>
+    <string name="dlg_DoYouReallyWantToDelete">آیا از پاک کردن اطمینان دارید؟</string>
+    <string name="female">خانم</string>
+    <string name="male">آقا</string>
+    <string name="msg_no">خیر</string>
+    <string name="msg_yes">بلی</string>
+    <string name="Delete">پاک کردن</string>
+    <string name="Edit">ویرایش</string>
+    <string name="status">وضعیت</string>
+    <string name="refreshing">در حال به روز رسانی کردن اطلاعات...</string>
+    <string name="error_no_connection">ارتباط برقرار نیست که !!!</string>
+    <string name="None">نامشخص</string>
+
+
+    <string name="abt_website">سایت رسمی:</string>
+    <string name="abt_email">پست الکترونیکی:</string>
+    <string name="abt_tellphone">تلفن تماس:</string>
+
+    <string name="msg_PaymentBazarOperationSuccessful">عملیات با موفقیت انجام شد</string>
+    <string name="msg_PaymentZarinPalBelowSilverLevel">سطح تاييد پذيرنده پايين تر از سطح نقره اي است</string>
+    <string name="msg_PaymentZarinPalDefectiveInformation">اطلاعات ارسال شده ناقص است</string>
+    <string name="msg_PaymentZarinPalCanNotEditRequest">امكان ويرايش درخواست ميسر نمي باشد</string>
+    <string name="msg_PaymentZarinPalFinancialOperationNotFind">هيچ نوع عمليات مالي براي اين تراكنش يافت نشد</string>
+    <string name="msg_PaymentZarinPalIdValidationTime">مدت زمان معتبر طول عمر شناسه پرداخت بايد بين 30 دقيه تا 45 روز مي باشد</string>
+    <string name="msg_PaymentZarinPalIncorrectAdditionalData">اطلاعات تکمیلی نامعتبر می باشد</string>
+    <string name="msg_PaymentZarinPalIncorrectIpOrMerchantCode">اطلاعات تایید هویت نامعتبر می باشد</string>
+    <string name="msg_PaymentZarinPalMethodAccessNotAllowed">خطای نوع دسترسی</string>
+    <string name="msg_PaymentZarinPalOperationSuccessful">عملیات با موفقیت انجام شد</string>
+    <string name="msg_PaymentZarinPalOperationSuccessfulPaymentVerificationAlredyDone">عملیات با موفقیت انجام شد و تایید پرداخت ارسال شده است</string>
+    <string name="msg_PaymentZarinPalRequestArchived">درخواست مورد نظر آرشيو شده است</string>
+    <string name="msg_PaymentZarinPalRequestNotFind">درخواست مورد نظر يافت نشد</string>
+    <string name="msg_PaymentZarinPalShaparakRestrictionPayment">با توجه به محدوديت هاي شاپرك امكان پرداخت با رقم درخواست شده ميسر نمي باشد</string>
+    <string name="msg_PaymentZarinPalTransactionCountExceeded">سقف تقسيم تراكنش از لحاظ تعداد يا رقم عبور نموده است</string>
+    <string name="msg_PaymentZarinPalTransactionFailed">تراكنش نا موفق ميباشد</string>
+    <string name="msg_PaymentZarinPalTransactionPaymentMismatch">رقم تراكنش با رقم پرداخت شده مطابقت ندارد</string>
+
+
+    <string name="msg_PaymentStatusGhasedakTransactionOk">تراکنش با موفقیت اجرا گردید</string>
+    <string name="msg_PaymentStatusGhasedakInvalidUserNameOrPassword">نام کاربری یا کلمه عبور معتبر نمیباشد</string>
+    <string name="msg_PaymentStatusGhasedakInvalidAmount">مبلغ ارسالی معتبر نیست</string>
+    <string name="msg_PaymentStatusGhasedakInvalidMobileNumber">شماره همراه ارسالی معتبر نیست</string>
+    <string name="msg_PaymentStatusGhasedakInactiveService">سرویس مورد نظر در دسترسی نمی باشد</string>
+    <string name="msg_PaymentStatusGhasedakInsufficientCredit">اعتبار کاربر کمتر از مبلغ از ارسالی است</string>
+    <string name="msg_PaymentStatusGhasedakUserNotExistOrInactive">کاربر مورد نظر وجود ندارد و یا غیر فعال است</string>
+    <string name="msg_PaymentStatusGhasedakPurchaseCodeInvalidOrNotExist">کد سفارش ارسالی نا معتبر می باشد</string>
+    <string name="msg_PaymentStatusGhasedakTransactionNotExist">تراکنش مورد نظر وجود ندارد</string>
+    <string name="msg_PaymentStatusGhasedakTransactionInProcess">تراکنش در دست انجام می باشد</string>
+    <string name="msg_PaymentStatusGhasedakTransactionError">ترکنش با خطا مواجه گردید</string>
+    <string name="msg_PaymentStatusGhasedakRequestError">اجرای درخواست با خطا مواجه گردید</string>
+    <string name="msg_PaymentStatusGhasedakDuplicatePurchaseCode">کد سفارش ارسالی تکراری است</string>
+    <string name="msg_PaymentStatusGhasedakInvalidTransferCode">کد واریزی صحیح نمیباشد</string>
+
+    <string name="str_notification_chanel_name">مثلث</string>
+    <string name="str_notification_channel_description">اطلاع رسانی برنامه مثلث</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+
+
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#9ad2d6</color>
+    <color name="colorPrimaryWhite">#fffefc</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="greenLand">#00a351</color>
+    <color name="greenLandDark">#0e4b37</color>
+    <color name="gray">#34433c</color>
+    <color name="cream">#f6b154</color>
+    <color name="creamDark">#875107</color>
+    <color name="creamDarker">#4e2e03</color>
+    <color name="tutorial_alpha_bg">#aa2c9332</color>
+    <color name="glassblack">#782f1f0a</color>
+    <color name="black">#ff000000</color>
+    <color name="black2">#3b3b3b</color>
+    <color name="brown">#f4a460</color>
+
+    <color name="gold">#FFD700</color>
+    <color name="bronze">#CD7F32</color>
+    <color name="silver">#c0c0c0</color>
+
+    <color name="drp_blue">#79d4ff</color>
+    <color name="drp_darkblue">#104f6c</color>
+    <color name="drp_orange">#eaaf3b</color>
+    <color name="drp_orange2">#fe8a00</color>
+    <color name="drp_gray">#b2bbc4</color>
+
+    <!--<color name="onesignal_bgimage_notif_title_color">#FF875107</color>-->
+    <!--<color name="onesignal_bgimage_notif_body_color">#FF875107</color>-->
+ <color name="selectDay">#e01015</color>
+    <color name="currentDay">#ffffff</color>
+</resources>

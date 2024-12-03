@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg04"
+    android:paddingRight="@dimen/font_size">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/font_size"
+            android:clickable="false"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/s4_font_size"
+            android:paddingRight="@dimen/s4_font_size"
+            tools:context=".MainActivity">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2_font_size"
+                app:srcCompat="@drawable/ic_launcher" />
+
+            <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                android:id="@+id/tv_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/msg_VersionExpired"
+                android:textColor="@color/drp_blue"
+                android:textSize="@dimen/font_size"
+                android:textStyle="bold" />
+
+            <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                android:id="@+id/ltv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@string/msg_VersionExpired_02"
+                android:textColor="@color/drp_orange"
+                android:textSize="@dimen/ss_font_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ir.fardan7eghlim.tri.Models.widgets.customButton
+                    android:id="@+id/btn_download"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_version"
+                    android:layout_alignStart="@+id/tv_version"
+                    android:layout_below="@+id/tv_version"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/s6_font_size"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_gray"
+                    android:gravity="center"
+                    android:text="@string/btn_Download"
+                    android:textColor="@color/colorPrimaryWhite" />
+
+
+                <ir.fardan7eghlim.tri.Models.widgets.customButton
+                    android:id="@+id/btn_Exit_d"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/btn_download"
+                    android:layout_alignStart="@+id/btn_download"
+                    android:layout_below="@+id/btn_download"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/s6_font_size"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_gray"
+                    android:gravity="center"
+                    android:text="@string/btn_Exit"
+                    android:textColor="@color/colorPrimaryWhite" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
+

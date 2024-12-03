@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#441d6b"
+    tools:context="ir.fardan7eghlim.tri.Views.help.FirstPageActivity">
+    <ImageView
+        android:id="@+id/img_first_helper"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:padding="@dimen/font_size"
+        android:layout_marginBottom="@dimen/sss_font_size"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_launcher" />
+    <LinearLayout
+        android:id="@+id/ll_events_helper"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/font_size"
+        android:layout_marginLeft="@dimen/font_size"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s6_font_size"
+            android:layoutDirection="rtl"
+            android:background="@drawable/rounded_gray2"
+            android:orientation="horizontal"
+            android:weightSum="100">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_gravity="right"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="2dp"
+                app:srcCompat="@drawable/cr_0" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingRight="@dimen/s6_font_size"
+                android:layout_weight="70"
+                android:orientation="vertical">
+                <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="right"
+                    android:text="نوبت دکتر پوست"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="#e9ececec"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/s3.1_font_size" />
+                <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="right"
+                    android:text="13:00 ~ 14:00"
+                    android:maxLines="1"
+                    android:textColor="#e9ececec"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/s4.1_font_size" />
+            </LinearLayout>
+            <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                android:layout_width="0dp"
+                android:layout_weight="25"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:gravity="left"
+                android:text="28 دقیقه دیگر"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="#e9ececec"
+                android:textDirection="rtl"
+                android:textSize="@dimen/s4.1_font_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s6_font_size"
+            android:layoutDirection="rtl"
+            android:background="@drawable/rounded_gray2"
+            android:orientation="horizontal"
+            android:weightSum="100">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_gravity="right"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="2dp"
+                app:srcCompat="@drawable/cr_3" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingRight="@dimen/s6_font_size"
+                android:layout_weight="70"
+                android:orientation="vertical">
+                <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="right"
+                    android:text="قسط خودرو"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="#e9ececec"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/s3.1_font_size" />
+                <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="right"
+                    android:text="15:00 (روز 15 هر ماه)"
+                    android:maxLines="1"
+                    android:textColor="#e9ececec"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/s4.1_font_size" />
+            </LinearLayout>
+            <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                android:layout_width="0dp"
+                android:layout_weight="25"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:gravity="left"
+                android:text="2 ساعت و 28 دقیقه دیگر"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="#e9ececec"
+                android:textDirection="rtl"
+                android:textSize="@dimen/s4.1_font_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s6_font_size"
+            android:layoutDirection="rtl"
+            android:background="@drawable/rounded_gray2"
+            android:orientation="horizontal"
+            android:weightSum="100">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_gravity="right"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="2dp"
+                app:srcCompat="@drawable/cr_2" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingRight="@dimen/s6_font_size"
+                android:layout_weight="70"
+                android:orientation="vertical">
+                <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="right"
+                    android:text="کلاس زبان"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="#e9ececec"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/s3.1_font_size" />
+                <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="right"
+                    android:text="17:30 (دوشنبه ها،چهارشنبه ها)"
+                    android:maxLines="1"
+                    android:textColor="#e9ececec"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/s4.1_font_size" />
+            </LinearLayout>
+            <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                android:layout_width="0dp"
+                android:layout_weight="25"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:gravity="left"
+                android:text="4 ساعت و 58 دقیقه دیگر"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="#e9ececec"
+                android:textDirection="rtl"
+                android:textSize="@dimen/s4.1_font_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s6_font_size"
+            android:layoutDirection="rtl"
+            android:background="@drawable/rounded_gray2"
+            android:orientation="horizontal"
+            android:weightSum="100">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_gravity="right"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="2dp"
+                app:srcCompat="@drawable/cr_1" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingRight="@dimen/s6_font_size"
+                android:layout_weight="70"
+                android:orientation="vertical">
+                <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="right"
+                    android:text="قرص معده"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="#e9ececec"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/s3.1_font_size" />
+                <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="right"
+                    android:text="21:30 (روزانه)"
+                    android:maxLines="1"
+                    android:textColor="#e9ececec"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/s4.1_font_size" />
+            </LinearLayout>
+            <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                android:layout_width="0dp"
+                android:layout_weight="25"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:gravity="left"
+                android:text="8 ساعت و 58 دقیقه دیگر"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="#e9ececec"
+                android:textDirection="rtl"
+                android:textSize="@dimen/s4.1_font_size" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_oghat_helper"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/font_size"
+        android:layout_marginLeft="@dimen/font_size"
+        android:background="@drawable/rounded_gray3"
+        android:padding="@dimen/sss_font_size"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/chBx_namayesh_oghat_helper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:textSize="@dimen/sss_font_size"
+            android:checked="true"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:text="استفاده از امکانات مذهبی"
+            android:textColor="@color/drp_orange2"
+            android:textDirection="rtl" />
+        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/font_size"
+            android:gravity="right"
+            android:text="در صورتی که امکانات مذهبی برنامه را مانند نمایش اوقات شرعی،پخش اذان ها و ... را لازم ندارید،این گزینه را غیر فعال کنید."
+            android:ellipsize="end"
+            android:textColor="#e9ececec"
+            android:textDirection="rtl"
+            android:textSize="@dimen/s4_font_size" />
+        <CheckBox
+            android:id="@+id/chBx_azan_sobh_helper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:checked="true"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:text="پخش اذان صبح"
+            android:textColor="@color/drp_orange"
+            android:textDirection="rtl" />
+
+        <CheckBox
+            android:id="@+id/chBx_azan_zohr_helper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:checked="true"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:text="پخش اذان ظهر"
+            android:textColor="@color/drp_orange"
+            android:textDirection="rtl" />
+
+        <CheckBox
+            android:id="@+id/chBx_azan_maghreb_helper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sss_font_size"
+            android:layoutDirection="rtl"
+            android:checked="true"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:text="پخش اذان مغرب"
+            android:textColor="@color/drp_orange"
+            android:textDirection="rtl" />
+        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="تمام این حالات در تنظیمات برنامه هم قابل ویرایش هستند."
+            android:ellipsize="end"
+            android:textColor="#e9ececec"
+            android:textDirection="rtl"
+            android:textSize="@dimen/s4_font_size" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_cities_helper"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/s6_font_size"
+        android:layout_marginLeft="@dimen/s6_font_size"
+        android:background="@drawable/rounded_gray3"
+        android:padding="@dimen/sss_font_size"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s6_font_size"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <Spinner
+                android:id="@+id/spr_province_helper"
+                android:layout_width="0dp"
+                android:textColor="@color/colorPrimaryWhite"
+                android:layout_height="wrap_content"
+                android:layout_weight="65" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="35"
+                android:gravity="center"
+                android:text="استان:"
+                android:textColor="@color/drp_orange2"
+                android:textSize="@dimen/s3.1_font_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s4_font_size"
+            android:layout_marginTop="@dimen/s6_font_size"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <Spinner
+                android:id="@+id/spr_city_helper"
+                android:layout_width="0dp"
+                android:textColor="@color/colorPrimaryWhite"
+                android:layout_height="wrap_content"
+                android:layout_weight="6" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="شهر:"
+                android:textColor="@color/drp_orange2"
+                android:textSize="@dimen/s3.1_font_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fr_rectangles_helper"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/chBx_namayesh_rectangels_helper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/x2_font_size"
+                android:layout_marginBottom="@dimen/s5_font_size"
+                android:layout_marginRight="@dimen/s6_font_size"
+                android:textSize="@dimen/sss_font_size"
+                android:checked="true"
+                android:theme="@android:style/Theme.Holo.Light"
+                android:text="نمایش مثلث ها برروی تمام صفحات گوشی"
+                android:textColor="@color/drp_orange2"
+                android:textDirection="rtl" />
+            <ImageView
+                android:id="@+id/img_rectangles_hand_helper"
+                android:layout_width="match_parent"
+                android:layout_gravity="bottom"
+                android:visibility="visible"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/help_tri_hand_b0" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/ll_per_helper"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/sss_font_size"
+        android:layout_marginRight="@dimen/sss_font_size"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_per_helper"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/s_font_size"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/help_per_c1" />
+        <ir.fardan7eghlim.tri.Models.widgets.customButton
+            android:id="@+id/btn_per_helper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_gray2"
+            android:textColor="@color/colorPrimaryWhite"
+            android:textStyle="bold"
+            android:text="دادن اجازه دسترسی" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:weightSum="10"
+        android:orientation="horizontal">
+        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+            android:id="@+id/txt_second_helper"
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            android:paddingBottom="@dimen/s6_font_size"
+            android:maxLines="2"
+            android:text="از حسن انتخاب شما برای نصب مثلث متشکریم."
+            android:textColor="@color/colorPrimaryWhite"
+            android:textSize="@dimen/s4_font_size"
+            android:textStyle="bold" />
+        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+            android:id="@+id/txt_first_helper"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="با سلام"
+            android:textColor="@color/colorPrimaryWhite"
+            android:textSize="@dimen/sss_font_size"
+            android:paddingBottom="@dimen/s6_font_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+        android:id="@+id/txt_third_helper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/s6_font_size"
+        android:text="لطفا نصب و تنظیمات برنامه را ادامه دهید."
+        android:textColor="@color/colorPrimaryWhite"
+        android:textSize="@dimen/ss_font_size"
+        android:visibility="gone"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/img_next_btn_helper"
+        android:layout_width="@dimen/x1_font_size"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/s5_font_size"
+        android:layout_marginRight="@dimen/s5_font_size"
+        android:layout_height="@dimen/x1_font_size"
+        app:srcCompat="@drawable/btn_icon_arrow" />
+</FrameLayout>

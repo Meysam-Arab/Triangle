@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fl_main"
+    android:background="@drawable/bg01"
+    android:paddingRight="@dimen/font_size"
+    tools:context="ir.fardan7eghlim.tri.Views.Home.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="18"
+            android:layoutDirection="rtl"
+            android:paddingTop="2dp"
+            android:paddingBottom="1dp"
+            android:weightSum="100"
+            android:orientation="horizontal">
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/btn_setting_main_activity"
+                android:layout_width="0dp"
+                android:layout_weight="9"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/s4_font_size"
+                android:layout_marginTop="@dimen/s6_font_size"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/btn_icon_menu2" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:id="@+id/tris_menu_master"
+                android:layout_width="0dp"
+                android:layout_weight="85"
+                android:weightSum="60"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <FrameLayout
+                    android:id="@+id/fl_home_main_activity"
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="@dimen/s5_font_size"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_home_main_activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/triangle_blue" />
+
+                    <ImageView
+                        android:layout_width="@dimen/sss_font_size"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="1dp"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@drawable/btn_icon_home" />
+
+                    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:text="صفحه اصلی"
+                        android:textColor="@color/colorPrimaryWhite"
+                        android:textSize="@dimen/s5_font_size" />
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/fl_Calndr_main_activity"
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="@dimen/s5_font_size"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_Calndr_main_activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/triangle_green" />
+
+                    <ImageView
+                        android:layout_width="@dimen/sss_font_size"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="1dp"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@drawable/btn_icon_calendar" />
+
+                    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:text="تقویم"
+                        android:textColor="@color/colorPrimaryWhite"
+                        android:textSize="@dimen/s5_font_size" />
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/fl_world_main_activity"
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="@dimen/s5_font_size"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_world_main_activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/triangle_purple" />
+
+                    <ImageView
+                        android:layout_width="@dimen/sss_font_size"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="1dp"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@drawable/btn_icon_world" />
+
+                    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:text="دنیای امروز"
+                        android:textColor="@color/colorPrimaryWhite"
+                        android:textSize="@dimen/s5_font_size" />
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/fl_contacts_main_activity"
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="@dimen/s5_font_size"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_contacts_main_activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/triangle_orange" />
+
+                    <ImageView
+                        android:layout_width="@dimen/sss_font_size"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="1dp"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@drawable/btn_icon_telephone" />
+
+                    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:text="تماس"
+                        android:textColor="@color/colorPrimaryWhite"
+                        android:textSize="@dimen/s5_font_size" />
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/fl_finalnce_main_activity"
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="@dimen/s5_font_size"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_finalnce_main_activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/triangle_sky_blue" />
+
+                    <ImageView
+                        android:layout_width="@dimen/sss_font_size"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="1dp"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@drawable/btn_icon_chat" />
+
+                    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:text="چت"
+                        android:textColor="@color/colorPrimaryWhite"
+                        android:textSize="@dimen/s5_font_size" />
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/fl_account_main_activity"
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="@dimen/s5_font_size"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_account_main_activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/triangle_dark_red" />
+
+                    <ImageView
+                        android:layout_width="@dimen/sss_font_size"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="1dp"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@drawable/btn_icon_person" />
+
+                    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:text="مثلث من"
+                        android:textColor="@color/colorPrimaryWhite"
+                        android:textSize="@dimen/s5_font_size" />
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/tris_menu_world"
+                android:layout_width="0dp"
+                android:layout_weight="85"
+                android:weightSum="60"
+                android:visibility="gone"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <FrameLayout
+                    android:id="@+id/fl_bck_world_main_activity"
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="@dimen/s5_font_size"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_bck_world_main_activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:rotation="180"
+                        app:srcCompat="@drawable/triangle_bck" />
+                    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:text="بازگشت"
+                        android:textColor="@color/colorPrimaryWhite"
+                        android:textSize="@dimen/s5_font_size" />
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/fl_weather_main_activity"
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="@dimen/s5_font_size"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_weather_main_activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/triangle_sky_blue" />
+
+                    <ImageView
+                        android:layout_width="@dimen/sss_font_size"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="1dp"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@drawable/btn_icon_weather" />
+
+                    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:text="آب و هوا"
+                        android:textColor="@color/colorPrimaryWhite"
+                        android:textSize="@dimen/s5_font_size" />
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/fl_news_main_activity"
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="@dimen/s5_font_size"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_news_main_activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/triangle_dark_red" />
+
+                    <ImageView
+                        android:layout_width="@dimen/sss_font_size"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="1dp"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@drawable/btn_icon_news" />
+
+                    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:text="اخبار"
+                        android:textColor="@color/colorPrimaryWhite"
+                        android:textSize="@dimen/s5_font_size" />
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/fl_exchange_main_activity"
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="@dimen/s5_font_size"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_exchange_main_activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/triangle_dark_green" />
+
+                    <ImageView
+                        android:layout_width="@dimen/sss_font_size"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="1dp"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@drawable/btn_icon_exchange" />
+
+                    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:text="ارز و سکه"
+                        android:textColor="@color/colorPrimaryWhite"
+                        android:textSize="@dimen/s5_font_size" />
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/tris_menu_tools"
+                android:layout_width="0dp"
+                android:layout_weight="85"
+                android:weightSum="60"
+                android:visibility="gone"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <FrameLayout
+                    android:id="@+id/fl_bck_tools_main_activity"
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="@dimen/s5_font_size"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_bck_tools_main_activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:rotation="180"
+                        app:srcCompat="@drawable/triangle_bck" />
+                    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:text="بازگشت"
+                        android:textColor="@color/colorPrimaryWhite"
+                        android:textSize="@dimen/s5_font_size" />
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/fl_pdf_main_activity"
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="@dimen/s5_font_size"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_pdf_main_activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/triangle_purple" />
+
+                    <ImageView
+                        android:layout_width="@dimen/sss_font_size"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="1dp"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@drawable/btn_icon_pdf" />
+
+                    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:text="کتاب خوانی"
+                        android:textColor="@color/colorPrimaryWhite"
+                        android:textSize="@dimen/s5_font_size" />
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/fl_pay_main_activity"
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="@dimen/s5_font_size"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_pay_main_activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/triangle_yellow" />
+
+                    <ImageView
+                        android:layout_width="@dimen/sss_font_size"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="1dp"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@drawable/btn_icon_pay" />
+
+                    <ir.fardan7eghlim.tri.Models.widgets.customTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:text="پرداخت"
+                        android:textColor="@color/colorPrimaryWhite"
+                        android:textSize="@dimen/s5_font_size" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/frg_holder_main_activity"
+            android:layout_width="match_parent"
+            android:padding="@dimen/s5_font_size"
+            android:layout_marginRight="@dimen/s_font_size"
+            android:layout_height="0dp"
+            android:layout_weight="82"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="#de31314e"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/sss_font_size"
+    android:weightSum="10"
+                android:layout_height="match_parent">
+
+
+
+    <ListView
+        android:id="@+id/test_listView"
+        android:layout_width="0dp"
+        android:layout_weight="7"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_head"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/ss_font_size"
+            android:src="@mipmap/ic_launcher" />
+
+        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:gravity="center"
+            android:textSize="@dimen/ss_font_size"
+            android:textColor="#fff"
+            android:text="مثلث" />
+        <ir.fardan7eghlim.tri.Models.widgets.customTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="نسخه: نامشخص"
+            android:layout_marginTop="@dimen/s5_font_size"
+            android:id="@+id/tv_version"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:textSize="@dimen/s4_font_size"
+            android:textColor="#fff"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
