@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  res/drawable/rounded_edittext.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:shape="rectangle">
+    <padding android:bottom="@dimen/s6_font_size"
+        android:left="@dimen/s6_font_size"
+        android:right="@dimen/s6_font_size"
+        android:top="@dimen/s6_font_size"/>
+    <solid android:color="#5e449b"/>
+    <stroke android:width="@dimen/s6_font_size" android:color="#9099b1b4"/>
+    <corners
+        android:bottomRightRadius="@dimen/s4_font_size"
+        android:bottomLeftRadius="@dimen/s4_font_size"
+        android:topLeftRadius="@dimen/s4_font_size"
+        android:topRightRadius="@dimen/s4_font_size"/>
+</shape>
