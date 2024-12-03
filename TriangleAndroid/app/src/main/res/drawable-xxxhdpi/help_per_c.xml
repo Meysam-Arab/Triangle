@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/help_per_c1" android:duration="1000" />
+    <item android:drawable="@drawable/help_per_c2" android:duration="200" />
+    <item android:drawable="@drawable/help_per_c3" android:duration="300" />
+    <item android:drawable="@drawable/help_per_c4" android:duration="400" />
+    <item android:drawable="@drawable/help_per_c5" android:duration="200" />
+    <item android:drawable="@drawable/help_per_c6" android:duration="1500" />
+</animation-list>
